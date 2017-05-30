@@ -1,0 +1,13 @@
+{
+  "name": "invoicing.core",
+  "version": "0.1.0",
+  "main": "build/index",
+  "files": [
+    "dist"
+  ],
+  "author": "Thomas Kerbrat <kerbrat@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.3.4"
+  }
+}

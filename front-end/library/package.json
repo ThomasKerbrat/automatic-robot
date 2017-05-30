@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "author": "Thomas Kerbrat <kerbrat@outlook.com>",
   "license": "ISC",
-  "main": "build/index",
+  "main": "dist/index",
+  "typings": "dist/index",
   "files": [
     "dist"
   ],
@@ -14,7 +15,7 @@
     "clean:dist": "rimraf -r dist/**"
   },
   "dependencies": {
-    "invoicing.core": "file:../../core",
+    "invoicing-core": "file:../../core",
     "rimraf": "^2.6.1",
     "typescript": "^2.3.4"
   }

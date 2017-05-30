@@ -1,9 +1,10 @@
 {
-  "name": "invoicing.core",
+  "name": "invoicing-core",
   "version": "0.1.0",
   "author": "Thomas Kerbrat <kerbrat@outlook.com>",
   "license": "ISC",
-  "main": "build/index",
+  "main": "dist/index",
+  "typings": "dist/index",
   "files": [
     "dist"
   ],

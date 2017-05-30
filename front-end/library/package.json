@@ -1,0 +1,21 @@
+{
+  "name": "invoicing.front-end.library",
+  "version": "0.1.0",
+  "author": "Thomas Kerbrat <kerbrat@outlook.com>",
+  "license": "ISC",
+  "main": "build/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project ./build/tsconfig.json",
+    "prebuild": "npm run -s clean",
+    "clean": "npm run -s clean:dist",
+    "clean:dist": "rimraf -r dist/**"
+  },
+  "dependencies": {
+    "invoicing.core": "file:../../core",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.3.4"
+  }
+}

@@ -2,3 +2,4 @@ node_modules
 
 #dist/
 core/dist/
+front-end/dist/

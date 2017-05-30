@@ -11,7 +11,7 @@
     "build": "tsc --project ./build/tsconfig.json",
     "prebuild": "npm run -s clean",
     "clean": "npm run -s clean:dist",
-    "clean:dist": "rimraf -r dist/*"
+    "clean:dist": "rimraf -r dist/**"
   },
   "dependencies": {
     "rimraf": "^2.6.1",

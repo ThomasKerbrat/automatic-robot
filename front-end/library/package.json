@@ -11,11 +11,19 @@
   "scripts": {
     "build": "tsc --project ./build/tsconfig.json",
     "prebuild": "npm run -s clean",
+    "build:spec": "tsc --project ./build/tsconfig.spec.json",
+    "prebuild:spec": "npm run -s prebuild",
+    "test": "mocha ./dist/**/*.spec.js",
+    "pretest": "npm run -s build:spec",
     "clean": "npm run -s clean:dist",
     "clean:dist": "rimraf -r dist/**"
   },
   "dependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.0.0",
     "invoicing-core": "file:../../core",
+    "mocha": "^3.4.2",
     "rimraf": "^2.6.1",
     "typescript": "^2.3.4"
   }
